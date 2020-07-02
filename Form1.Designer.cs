@@ -59,6 +59,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.lblmemoria = new System.Windows.Forms.Label();
+            this.lsthist = new System.Windows.Forms.ListBox();
+            this.cdmpot = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -239,7 +241,7 @@
             this.cmdigu.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.cmdigu.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdigu.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.cmdigu.Location = new System.Drawing.Point(557, 422);
+            this.cmdigu.Location = new System.Drawing.Point(557, 424);
             this.cmdigu.Margin = new System.Windows.Forms.Padding(4);
             this.cmdigu.Name = "cmdigu";
             this.cmdigu.Size = new System.Drawing.Size(183, 93);
@@ -271,7 +273,7 @@
             this.cmdmul.BackColor = System.Drawing.Color.DarkRed;
             this.cmdmul.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.cmdmul.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdmul.Location = new System.Drawing.Point(383, 132);
+            this.cmdmul.Location = new System.Drawing.Point(383, 134);
             this.cmdmul.Margin = new System.Windows.Forms.Padding(4);
             this.cmdmul.Name = "cmdmul";
             this.cmdmul.Size = new System.Drawing.Size(166, 100);
@@ -286,7 +288,7 @@
             this.cmdmas.BackColor = System.Drawing.Color.DarkRed;
             this.cmdmas.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.cmdmas.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdmas.Location = new System.Drawing.Point(383, 422);
+            this.cmdmas.Location = new System.Drawing.Point(383, 424);
             this.cmdmas.Margin = new System.Windows.Forms.Padding(4);
             this.cmdmas.Name = "cmdmas";
             this.cmdmas.Size = new System.Drawing.Size(166, 92);
@@ -301,7 +303,7 @@
             this.cmddiv.BackColor = System.Drawing.Color.DarkRed;
             this.cmddiv.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.cmddiv.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmddiv.Location = new System.Drawing.Point(383, 232);
+            this.cmddiv.Location = new System.Drawing.Point(383, 234);
             this.cmddiv.Margin = new System.Windows.Forms.Padding(4);
             this.cmddiv.Name = "cmddiv";
             this.cmddiv.Size = new System.Drawing.Size(166, 92);
@@ -343,7 +345,7 @@
             this.panel1.Controls.Add(this.cmdcom);
             this.panel1.Controls.Add(this.cmd8);
             this.panel1.Controls.Add(this.cmd0);
-            this.panel1.Location = new System.Drawing.Point(7, 136);
+            this.panel1.Location = new System.Drawing.Point(7, 138);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(372, 376);
             this.panel1.TabIndex = 18;
@@ -370,7 +372,7 @@
             this.cmdC.BackColor = System.Drawing.Color.DarkRed;
             this.cmdC.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.cmdC.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdC.Location = new System.Drawing.Point(557, 232);
+            this.cmdC.Location = new System.Drawing.Point(557, 234);
             this.cmdC.Margin = new System.Windows.Forms.Padding(4);
             this.cmdC.Name = "cmdC";
             this.cmdC.Size = new System.Drawing.Size(183, 92);
@@ -385,7 +387,7 @@
             this.cmcMenos.BackColor = System.Drawing.Color.Maroon;
             this.cmcMenos.Font = new System.Drawing.Font("Arial Black", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmcMenos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.cmcMenos.Location = new System.Drawing.Point(383, 326);
+            this.cmcMenos.Location = new System.Drawing.Point(383, 328);
             this.cmcMenos.Name = "cmcMenos";
             this.cmcMenos.Size = new System.Drawing.Size(166, 92);
             this.cmcMenos.TabIndex = 19;
@@ -426,7 +428,9 @@
             this.lbln2.Name = "lbln2";
             this.lbln2.Size = new System.Drawing.Size(421, 84);
             this.lbln2.TabIndex = 22;
+            this.lbln2.Text = "0";
             this.lbln2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbln2.Click += new System.EventHandler(this.lbln2_Click);
             // 
             // cdmborrarizq
             // 
@@ -434,10 +438,10 @@
             this.cdmborrarizq.BackColor = System.Drawing.Color.DarkRed;
             this.cdmborrarizq.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.cdmborrarizq.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cdmborrarizq.Location = new System.Drawing.Point(557, 132);
+            this.cdmborrarizq.Location = new System.Drawing.Point(557, 134);
             this.cdmborrarizq.Margin = new System.Windows.Forms.Padding(4);
             this.cdmborrarizq.Name = "cdmborrarizq";
-            this.cdmborrarizq.Size = new System.Drawing.Size(183, 92);
+            this.cdmborrarizq.Size = new System.Drawing.Size(183, 100);
             this.cdmborrarizq.TabIndex = 23;
             this.cdmborrarizq.Text = "<";
             this.cdmborrarizq.UseVisualStyleBackColor = false;
@@ -449,7 +453,7 @@
             this.cdmborrarder.BackColor = System.Drawing.Color.DarkRed;
             this.cdmborrarder.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.cdmborrarder.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cdmborrarder.Location = new System.Drawing.Point(556, 326);
+            this.cdmborrarder.Location = new System.Drawing.Point(556, 328);
             this.cdmborrarder.Margin = new System.Windows.Forms.Padding(4);
             this.cdmborrarder.Name = "cdmborrarder";
             this.cdmborrarder.Size = new System.Drawing.Size(183, 92);
@@ -464,7 +468,7 @@
             this.button1.BackColor = System.Drawing.Color.DarkRed;
             this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.button1.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1043, 241);
+            this.button1.Location = new System.Drawing.Point(1043, 243);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(119, 74);
@@ -479,12 +483,12 @@
             this.button2.BackColor = System.Drawing.Color.DarkRed;
             this.button2.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.button2.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(1043, 313);
+            this.button2.Location = new System.Drawing.Point(1043, 315);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(119, 74);
             this.button2.TabIndex = 26;
-            this.button2.Text = "MS";
+            this.button2.Text = "MR";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
@@ -494,7 +498,7 @@
             this.button3.BackColor = System.Drawing.Color.DarkRed;
             this.button3.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.button3.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(752, 241);
+            this.button3.Location = new System.Drawing.Point(752, 243);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(119, 73);
@@ -509,7 +513,7 @@
             this.button4.BackColor = System.Drawing.Color.DarkRed;
             this.button4.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.button4.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(752, 313);
+            this.button4.Location = new System.Drawing.Point(752, 315);
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(119, 74);
@@ -527,12 +531,40 @@
             this.lblmemoria.Text = "0";
             this.lblmemoria.Visible = false;
             // 
+            // lsthist
+            // 
+            this.lsthist.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.lsthist.FormattingEnabled = true;
+            this.lsthist.ItemHeight = 17;
+            this.lsthist.Location = new System.Drawing.Point(12, 1);
+            this.lsthist.Name = "lsthist";
+            this.lsthist.Size = new System.Drawing.Size(271, 123);
+            this.lsthist.TabIndex = 30;
+            this.lsthist.SelectedIndexChanged += new System.EventHandler(this.lsthist_SelectedIndexChanged);
+            // 
+            // cdmpot
+            // 
+            this.cdmpot.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cdmpot.BackColor = System.Drawing.Color.DarkRed;
+            this.cdmpot.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.cdmpot.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cdmpot.Location = new System.Drawing.Point(757, 462);
+            this.cdmpot.Margin = new System.Windows.Forms.Padding(4);
+            this.cdmpot.Name = "cdmpot";
+            this.cdmpot.Size = new System.Drawing.Size(158, 68);
+            this.cdmpot.TabIndex = 31;
+            this.cdmpot.Text = "^";
+            this.cdmpot.UseVisualStyleBackColor = false;
+            this.cdmpot.Click += new System.EventHandler(this.cdmpot_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1175, 529);
+            this.ClientSize = new System.Drawing.Size(1175, 532);
+            this.Controls.Add(this.cdmpot);
+            this.Controls.Add(this.lsthist);
             this.Controls.Add(this.lblmemoria);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -553,12 +585,14 @@
             this.Controls.Add(this.cmdigu);
             this.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Click += new System.EventHandler(this.button11_Click);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -597,6 +631,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label lblmemoria;
+        private System.Windows.Forms.ListBox lsthist;
+        private System.Windows.Forms.Button cdmpot;
     }
 }
 
